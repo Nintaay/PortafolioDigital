@@ -131,24 +131,24 @@ body {
     border-radius: 32px;
 }
 
-/* Acerca */
+/* Herramientas*/
 
-.about {
-    text-align: center;
+.herramientas {
+    text-align: center; /* con esto centro el texto dentro del contenedor*/
 }
 
-.subtitle {
+.subtitulo {
     color: var(--color-title);
-    font-size: 2rem;
+    font-size: 2rem;   /* se le da un espaciado y se le da color con la subproperty*/
     margin-bottom: 25px;
 }
 
 
-.about__paragraph {
-    line-height: 1.7;
+.herramientas__parrafo {
+    line-height: 1.5; /* se le da el alto a los renglones*/
 }
 
-.about__main {
+.herramientas__principal { /* se centran con la propiedad grid-template-colums lo hacemos columnas*/
     padding-top: 80px;
     display: grid;
     width: 90%;
@@ -159,7 +159,7 @@ body {
 }
 
 
-.about__icons {
+.herramientas__iconos {/*grid o renglon para los iconos*/
     display: grid;
     gap: 1em;
     justify-items: center;
@@ -168,7 +168,7 @@ body {
     margin: 0 auto;
 }
 
-.about__icon {
+.herramientas__icono {
     width: 40px;
 }
 
@@ -205,11 +205,11 @@ body {
 
 /* precio */
 
-.price{
+.precio{
     text-align: center;
 }
 
-.price__table{
+.precio__table{
     padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -218,39 +218,26 @@ body {
     align-items: center;
 }
 
-.price__element{
-    background-color: #e5e5f7;
+.precio__element{
+    background-color: #1d1de7;
     text-align: center;
     border-radius: 10px;
     width: 360px;
     padding: 40px;
     --color-plan: #696871;
-    --color-price: #1D293F;
+    --color-price: #ffffff;
     --bg-cta: #fff;
-    --color-cta: #5454D4;
-    --color-items: #696871;
+    --color-cta: #4e4eb9;
+    --color-items:#fff;
+   
 }
 
-.price__element--best{
-    width: 370px;
-    padding: 60px 40px;
-    background-color: #FF7143;
-    --color-plan: rgb(255 255 255 / 75%);
-    --color-price: #fff;
-    --bg-cta: #9F3919;
-    --color-cta: #FFF;
-    --color-items: #fff;
-}
-
-
-
-
-.price__price{
+.precio__price{
     font-size: 2.5rem;
     color: var(--color-price);
 }
 
-.price__items{
+.precio__items{
     margin-top: 35px;
     display: grid;
     gap: 1em;
@@ -260,7 +247,7 @@ body {
     color: var(--color-items);
 }
 
-.price__cta{
+.precio__cta{
     display: block;
     padding: 20px 0;
     border-radius: 10px;
