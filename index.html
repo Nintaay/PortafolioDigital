@@ -22,19 +22,19 @@
 
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Inicio</a>
+                    <a href="#hero" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="servicios.html" class="nav__links">Contacto</a>
+                    <a href="#contacto" class="nav__links">Contacto</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Herramientas</a>
+                    <a href="#herramientas" class="nav__links">Herramientas</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Preguntas Frecuentes</a>
+                    <a href="#preguntas" class="nav__links">Preguntas Frecuentes</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links" id="darkmode">Modo Oscuro</a>
+                    <a href="#hero" class="nav__links" id="darkmode">Modo Oscuro</a>
                 </li>
 
                 <img src="./images/close.svg" class="nav__close" alt="">
@@ -45,7 +45,7 @@
             </div>
         </nav>
 
-        <section class="hero__container container">
+        <section class="hero__container container" >
             <h1 class="hero__title">Joel Gumaro Moreno</h1>
             <p class="hero__paragraph1">Ingenierio en Desarrollo y Gestion De Software</p>
             <p class="hero__paragraph">Desarrollador de software altamente capacitado con una sólida experiencia en el diseño y la implementación de soluciones tecnológicas innovadoras.</p>
@@ -55,7 +55,7 @@
     <span class="typed" data_typed_items="Joel, Gumaro, Moreno"></span>
     <main>
         
-        <section class="container herramientas">
+        <section class="container herramientas" id="herramientas">
             <h2 class="subtitulo">Herramientas con mayor dominio</h2>
             <p class="herramientas__parrafo">Aqui conoceras las herramientas con las que poseo un mayor 
                 dominio del tema (todo para ayudarte a seguir avanzando)</p>
@@ -86,7 +86,7 @@
 
 
 
-        <section class="precio container">
+        <section class="precio container" id="contacto">
             <h2 class="subtitle">¿Quieres contactarme? Elije la mejor opcion para ti.</h2>
 
             <div class="precio__table">
@@ -175,7 +175,7 @@
             </div>
         </section>
 
-        <section class="questions container">
+        <section class="questions container" id="preguntas">
             <h2 class="subtitle">Preguntas frecuentes</h2>
             <p class="questions__paragraph">Aqui encontraras algunas preguntas frecuentes para que conozcas un poco mas de mi</p>
 
@@ -239,9 +239,10 @@
        <section class="EmailForm container">
         <form action="https://formspree.io/f/xnqkkbpb" method="POST">
             <label class="nombre" for="fname">First Name</label>
-            <input type="text" id="fname" name="fname">
+            <input type="text" id="fname" name="fname" class="input_enviar">
+           
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname">
+            <input type="text" id="lname" name="lname" class="input_enviar">
             <a href="#" class="cta">Enviar ahora</a>
         </form>                                                                                                                                                                                                                                                                           
        </section>

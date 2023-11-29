@@ -10,6 +10,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -357,8 +361,21 @@ body {
 }
 
 .EmailForm {
-    
     text-align: center;
+    
+
+}
+.input_enviar{
+    background-color: #fff;
+    height: 50px;
+    display:inline-block;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 800px;
+    height: 40px;
+    margin-bottom: 16px;
+
+  
 }
 
 /* Footer */
