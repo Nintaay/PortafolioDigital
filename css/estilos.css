@@ -3,6 +3,7 @@
 :root {
     --padding-container: 100px 0;
     --color-title: #001A49;
+    --bg--color:#1D293F;
 }
 
 body {
@@ -230,9 +231,7 @@ body {
 
 /* Testimonios */
 
-.testimony{
-    background-color: #e5e5f7;
-}
+
 
 .testimony__container{
     display: grid;
@@ -282,6 +281,7 @@ body {
 .testimony__arrow{
     width: 90%;
     cursor: pointer;
+    
 }
 
 /* Preguntas 7w7 */
@@ -364,7 +364,7 @@ body {
 /* Footer */
 
 .footer{
-    background-color: #1D293F;
+  background-color:  var(--bg--color);
 }
 
 .footer__title{
@@ -453,6 +453,14 @@ a{
     text-decoration: none;
     color: white;
 }
+
+body.dark{
+    background-color: black !important ;
+    color: #fff;
+    
+}
+   
+
 /* Media queries */
 
 @media (max-width:800px){
