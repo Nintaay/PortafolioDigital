@@ -2,8 +2,8 @@
 
 :root {
     --padding-container: 100px 0;
-    --color-title: #001A49;
-    --bg--color:#1D293F;
+    --color-title: #003aa7;
+    --bg--color:#003aa7;
 }
 
 body {
@@ -163,28 +163,13 @@ html{
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
 
+/* contacto we*/
 
-.herramientas__iconos {/*grid o renglon para los iconos*/
-    display: grid;
-    gap: 1em;
-    justify-items: center;
-    width: 260px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.herramientas__icono {
-    width: 40px;
-}
-
-
-/* precio */
-
-.precio{
+.contacto{
     text-align: center;
 }
 
-.precio__table{
+.contacto__table{
     padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -193,7 +178,7 @@ html{
     align-items: center;
 }
 
-.precio__element{
+.contacto__element{
     background-color: #1d1de7;
     text-align: center;
     border-radius: 10px;
@@ -207,12 +192,12 @@ html{
    
 }
 
-.precio__price{
+.contacto__price{
     font-size: 2.5rem;
     color: var(--color-price);
 }
 
-.precio__items{
+.contacto__items{
     margin-top: 35px;
     display: grid;
     gap: 1em;
@@ -222,7 +207,7 @@ html{
     color: var(--color-items);
 }
 
-.precio__cta{
+.contacto__cta{
     display: block;
     padding: 20px 0;
     border-radius: 10px;
@@ -377,7 +362,7 @@ html{
     margin-bottom: 16px;
 }
 .input_text{
-    background-color: #fff;
+
     display:inline-block;
     border-radius: 6px;
     font-size: 1rem;
