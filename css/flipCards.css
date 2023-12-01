@@ -1,51 +1,47 @@
-.card__container {
-    display: grid;
-    row-gap: 3.5rem;
-  }
+
   
   .card__article {
     position: relative;
     overflow: hidden;
   }
-  
-  .card__img {
-    width: 328px;
-    border-radius: 1.5rem;
+  .TitleC{
+    font-size: 70px;
+  padding-bottom: 5cm;
+  color: #1d1de7;
   }
-  
+ 
   .card__data {
     width: 280px;
     background-color: var(--container-color);
     padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.486);
     border-radius: 1rem;
     position: absolute;
     bottom: -9rem;
     left: 0;
     right: 0;
     margin-inline: auto;
-    opacity: 1;
+    opacity: 2;
     transition: opacity 1s 1s;
   }
   
   .card__description {
     display: block;
-    font-size: var(--small-font-size);
+    font-size:small;
     margin-bottom: .25rem;
   }
   
   .card__title {
-    font-size: var(--h2-font-size);
+    font-size: medium;
     font-weight: 500;
-    color: var(--title-color);
     margin-bottom: .75rem;
   }
   
   .card__button {
     text-decoration: none;
-    font-size: var(--small-font-size);
+    font-size: small;
     font-weight: 500;
-    color: var(--first-color);
+    color:#1d1de7;
   }
   
   .card__button:hover {
@@ -55,7 +51,7 @@
   /* Naming animations in hover */
   .card__article:hover .card__data {
     animation: show-data 5s forwards;
-    opacity: 1;
+    opacity: 2;
     transition: opacity .3s;
   }
   
@@ -99,13 +95,4 @@
     }
   }
   
-  @keyframes show-overflow {
-    0% {
-      overflow: initial;
-      pointer-events: none;
-    }
-    50% {
-      overflow: hidden;
-    }
-  }
-  
+ 
