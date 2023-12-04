@@ -146,6 +146,7 @@ html{
     color: var(--color-title);
     font-size: 2rem;   /* se le da un espaciado y se le da color con la subproperty*/
     margin-bottom: 25px;
+    padding-bottom: 1cm;
 }
 
 
@@ -595,7 +596,7 @@ body.dark{
         font-size: 1rem;
     }
 
-    .subtitle{
+    .subtitulo{
         font-size: 1.8rem;
     }
 
