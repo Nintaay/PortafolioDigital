@@ -215,59 +215,60 @@ html{
     text-decoration: none;
     background-color: var(--bg-cta);
     font-weight: 600;
+    color: var(--color-cta);
     box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
 
-/* Testimonios */
+/* Lenguajes de programacion */
 
 
 
-.testimony__container{
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
+.LenguajesPro__container{
+    display: grid; /* lo hacemos en filas */
+    grid-template-columns: 50px 1fr 50px; /* son 3 columnas en la fila */
     gap: 1em;
     align-items: center;
 }
 
-.testimony__body{
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    justify-content: space-between;
+.LenguajesPro__body{
+    display: grid;  /* en fila*/
+    grid-template-columns: 1fr max-content; /* 2 columnas 1 fraccion y la segunda del maximo contenido */
+    justify-content: space-between; /* para que se vayan a las esquinas */
     align-items: center;
     gap: 2em;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    opacity: 0;
-    pointer-events: none;
+    grid-column: 2/3; /* que empieze en la segunda y termine en la 3 */
+    grid-row: 1/2;   /* y en la fila que empieze en 1 y termine en 2 esto para poner todos en el mismo lugar*/
+    opacity: 0; /* Los oculta a todos pero no quiero que se oculte el primero */
+    pointer-events: none; /* para que no se seleccione */
 }
 
 
-.testimony__body--show{
-    pointer-events: unset;
-    opacity: 1;
-    transition: opacity 1.5s ease-in-out;
+.LenguajesPro__body--show{
+    pointer-events: unset; /* como no se podian seleccionar se le pone esto  para que este si se pueda seleccionar*/
+    opacity: 1;/* este si se va a ver */
+    transition: opacity 1.5s ease-in-out; /* transicion de aparecer */
 }
 
-.testimony__img{
+.LenguajesPro__img{
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 50%; /* para redondear la imagen */
     object-fit: cover;
     object-position: 50% 30%;
 }
 
-.testimony__texts{
+.LenguajesPro__texts{
     max-width: 700px;
 }
 
-.testimony__course{
+.LenguajesPro__course{
     background-color: #1d1de7;
     color: #fff;
     display: inline-block;
     padding: 5px;
 }
 
-.testimony__arrow{
+.LenguajesPro__arrow{
     width: 90%;
     cursor: pointer;
     
@@ -276,10 +277,10 @@ html{
 /* Preguntas 7w7 */
 
 .questions{
-    text-align: center;
+    text-align: center; 
 }
 
-.questions__container{
+.questions__container{ 
     display: grid;
     gap: 2em;
     padding-top: 50px;
@@ -288,7 +289,7 @@ html{
 
 .questions__padding{
     padding: 0;
-    transition: padding .3s;
+    transition: padding .3s; /* se crea el contorno  */
     border: 1px solid #5454D4;
     border-radius: 6px;
 }
@@ -298,14 +299,14 @@ html{
 }
 
 .questions__answer{
-    padding: 0 30px 0;
-    overflow: hidden;
+    padding: 0 30px 0;  
+    overflow: hidden;  /* ocultamos la respuesta */
 }
 
-.questions__title{
+.questions__title{  /* MANDAMOS EL TITULO A LA IZQUIERDA */
     text-align: left;
     display: flex;
-    font-size: 20px;
+    font-size: 20px; 
     padding: 30px 0 30px;
     cursor: pointer;
     color: var(--color-title);
@@ -317,7 +318,7 @@ html{
     background-color: var(--color-title);
     width: 25px;
     height: 25px;
-    display: flex;
+    display: flex; /*  alineamos a la derecha el arrow*/
     justify-content: center;
     align-items: center;
     align-self: flex-end;
@@ -326,12 +327,12 @@ html{
 }
 
 .questions__arrow--rotate{
-    transform: rotate(180deg);
+    transform: rotate(180deg); /* cuando seleccionada se  dara la vuelta */
 }
 
 .questions__show{
     text-align: left;
-    height: 0;
+    height: 0;        /* son las transiciones cuando das click a la flecha */
     transition: height .3s;
 }
 
