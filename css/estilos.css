@@ -340,7 +340,7 @@ html{
     display: block;
 }
 
-.questions__copy{
+.Oferta__copy{ /* como ya esta dentro del container questions nada mas se le da el width de 60 y margin para centrar*/
     width: 60%;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -377,7 +377,7 @@ html{
   background-color:  var(--bg--color);
 }
 
-.footer__title{
+.footer__title{ 
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 30px;
@@ -388,15 +388,15 @@ html{
 }
 
 
-.footer__container{
-    display: flex;
+.footer__container{  /*con esto mandamos a las orillas y los espaciamos */
+    display: flex; /*como container es padre  del  nav y el form con dysplay flex los ponemos a un lado del otro*/
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #fff;
     padding-bottom: 60px;
 }
 
-.nav--footer{
+.nav--footer{ /*se crea un grid dentro del grid original para los enlaces*/
     padding-bottom: 20px;
     display: grid;
     gap: 1em;
@@ -408,7 +408,7 @@ html{
     display: flex;
     margin: 0;
     margin-right: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*por si en algun puntoo los enlaces ya no caben se desvordan */
 }
 
 .footer__inputs{
@@ -417,7 +417,7 @@ html{
     overflow: hidden;
 }
 
-.footer__input{
+.footer__input{ /*estilo del input*/
     background-color: #fff;
     height: 50px;
     display: block;
@@ -429,10 +429,10 @@ html{
     margin-right: 16px;
 }
 
-.footer__submit{
+.footer__submit{ /*estilo del boton y se crea el contorno de atras */
     margin-left: auto;
-    display: inline-block;
-    height: 50px;
+    display: inline-block; /* lo espaciamos */
+    height: 50px; 
     padding: 0 20px ;
     background-color: #2091F9;
     border: none;
@@ -513,37 +513,15 @@ body.dark{
         cursor: pointer;
     }
 
-    .hero__title{
+    .nav__title{
         font-size: 2.5rem;
     }
 
-
-    .about__main{
-        gap: 2em;
-    }
-
-    .about__icons:last-of-type{
-        grid-column: 1/-1;
-    }
-
-
-    .knowledge__container{
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content 1fr;
-        gap: 3em;
-        text-align: center;
-    }
-
-    .knowledge__picture{
-        grid-row: 1/2;
-        justify-self: center;
-    }
-
-    .testimony__container{
+    .LenguajesPro__container{
         grid-template-columns: 30px 1fr 30px;
     }
 
-    .testimony__body{
+    .LenguajesPro__body{
         grid-template-columns: 1fr;
         grid-template-rows: max-content max-content;
         gap: 3em;
@@ -551,13 +529,13 @@ body.dark{
     }
 
 
-    .testimony__img{
+    .LenguajesPro__img{
         width: 200px;
         height: 200px;
         
     }
 
-    .questions__copy{
+    .Oferta__copy{
         width: 100%;
     }
 
@@ -588,11 +566,11 @@ body.dark{
 }
 
 @media (max-width:600px){
-    .hero__title{
+    .nav__title{
         font-size: 2rem;
     }
 
-    .hero__paragraph{
+    .nav__parrafo{
         font-size: 1rem;
     }
 
@@ -600,37 +578,34 @@ body.dark{
         font-size: 1.8rem;
     }
 
-    .price__element{
+    .contacto__element{
         width: 90%;
     }
 
-    .price__element--best{
-        width: 90%;
-  
-    }
+   
 
-    .price__price{
+    .contacto__price{
         font-size: 2rem;
     }
 
-    .testimony{
+    .LenguajesPro{
         --padding-container: 60px 0;
     }
 
-    .testimony__container{
+    .LenguajesPro__container{
         grid-template-columns: 28px 1fr 28px;
         gap: .9em;
     }
 
-    .testimony__arrow{
+    .LenguajesPro__arrow{
         width: 100%;
     }
 
-    .testimony__course{
+    .LenguajesPro__course{
         margin-top: 15px;
     }
 
-    .questions__title{
+    .LenguajesPro__title{
         font-size: 1rem;
     }
 
