@@ -2,7 +2,7 @@
 
 :root {
     --padding-container: 100px 0;
-    --color-title: #003aa7;
+    --color-title: #003aa7;    /* se crean custom propertis para acceder desde cualquier lado */
     --bg--color:#003aa7;
 }
 
@@ -14,36 +14,37 @@ html{
     scroll-behavior: smooth;
 }
 
-.container {
+.container { /* Es el contenedor de la pagina */
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: hidden;/*todo lo que salga del contenedor se va a ocultar  */
     padding: var(--padding-container);
 }
 
-.hero {
+.ContenedorNav {
     width: 100%;
-    height: 100vh;
-    min-height: 600px;
-    max-height: 1000px;
+    height: 100vh; /* aqui si es de 100 x100 porque aqui va la imagen*/
+    min-height: 600px;/* para ipads */
+    max-height: 1000px;/* para ipads */
     position: relative;
-    display: grid;
-    grid-template-rows: 100px 1fr;
-    color: #fff;
+    display: grid; /* se crea la row o grid es la misma cheet */
+    grid-template-rows: 100px 1fr;  /* y aqui es donde se divide del nav al  texto */
+    color: #fff; /* color de texto centrado */
 }
 
-.hero::before {
+.ContenedorNav::before {  /* content,position,top,left estan ahi porque en la imagen
+    hay un problema con las posisiones fixed y clippad entonces se ponen pora que se posicione a su padre que es el de arriba   */
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/computer.jpg');
-    background-size: cover;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/computer.jpg');/* la imagen se saca de clippy */
+    background-size: cover;  /* para que se adapte a la pagina */
     clip-path: polygon(0 0, 100% 0, 100% 100%, 49% 100%, 0 100%);
-    z-index: -1;
+    z-index: -1; /*oculta el  texto por eso se le pone el z index  */
 }
 
 
@@ -51,30 +52,30 @@ html{
 
 .nav {
     --padding-container: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
+    height: 100%; /*   */
+    display: flex;/* esto es para ponerlos uno al lado de otro */
+    align-items: center; /* para centrarlos verticalmente */
 }
 
 .nav__title {
-    font-weight: 300;
+    font-weight: 300; /* peso de fuente mas delgado */
 }
 
 .nav__link {
-    margin-left: auto;
+    margin-left: auto; /*para que se pasen a la derecha gracias a flexbox  */
     padding: 0;
-    display: grid;
+    display: grid; /* una grid dentro  de otra grid*/
     grid-auto-flow: column;
-    grid-auto-columns: max-content;
+    grid-auto-columns: max-content; /* hace que se separen a la izquierda*/
     gap: 2em;
 }
 
 .nav__items {
-    list-style: none;
+    list-style: none;  /* quita el modo lista*/
 }
 
 .nav__links {
-    color: #fff;
+    color: #fff; /* color de los links papu */
     text-decoration: none;
 }
 .nav__links2 {
@@ -82,29 +83,29 @@ html{
     text-decoration: none;
 }
 
-.nav__menu {
-    margin-left: auto;
-    cursor: pointer;
-    display: none;
+.nav__menu { /* este es el padre del icono menu */
+    margin-left: auto;/* se alinea a la derecha  */
+    cursor: pointer;/* se le da el cursor para que al momento de pasar el raton se vea la manita  */
+    display: none;/* lo oculta hasta estar en dispositivos mobiles*/
 }
 
 .nav__img {
-    display: block;
-    width: 30px;
+    display: block; 
+    width: 30px;/* lo oculta hasta estar en dispositivos mobiles*/
 }
 
 
 .nav__close {
-    display: var(--show, none);
+    display: var(--show, none);/* lo oculta hasta estar en dispositivos mobiles*/
 }
 
 
-/* Hero container */
+/* Texto container */
 
-.hero__container {
+.TextoNav__container {
     max-width: 800px;
     --padding-container: 0;
-    display: grid;
+    display: grid;     /*centra  el texto de el navegador*/
     grid-auto-rows: max-content;
     align-content: center;
     gap: 1em;
@@ -112,15 +113,15 @@ html{
     text-align: center;
 }
 
-.hero__title {
+.TextoNav__title {
     font-size: 3rem;
 }
 
-.hero__paragraph {
+.TextoNav__parrafo1 {
     padding-top: 10px;
     margin-bottom: 20px;
 }
-.hero__paragraph1 {
+.TextoNav__parrafo2 {
     padding-top: 10px;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -172,10 +173,10 @@ html{
 
 .contacto__table{
     padding-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5em;
-    justify-content: space-evenly;
+    display: flex;/* lo pone en horizontal*/
+    flex-wrap: wrap; /* en caso de que haya mas elementos se desvordan*/
+    gap: 2.5em;   /* los separa*/
+    justify-content: space-evenly;/* espaciado equitativamente si hablamos de manera horiz*/
     align-items: center;
 }
 
@@ -184,8 +185,7 @@ html{
     text-align: center;
     border-radius: 10px;
     width: 360px;
-    padding: 40px;
-    --color-plan: #696871;
+    padding: 40px; /* se crea la card trasera*/
     --color-price: #ffffff;
     --bg-cta: #fff;
     --color-cta: #4e4eb9;
@@ -204,18 +204,17 @@ html{
     gap: 1em;
     font-weight: 300;
     font-size: 1.2rem;
-    margin-bottom: 50px;
+    margin-bottom: 50px; /* se crea el contenido de la card*/
     color: var(--color-items);
 }
 
 .contacto__cta{
     display: block;
     padding: 20px 0;
-    border-radius: 10px;
+    border-radius: 10px;  /* se posiciona el boton y se le da su radio*/
     text-decoration: none;
     background-color: var(--bg-cta);
     font-weight: 600;
-    color: var(--color-cta);
     box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
 
