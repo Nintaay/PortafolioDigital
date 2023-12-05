@@ -6,11 +6,11 @@
   }
   .TitleC{
     font-size: 70px;
-  padding-bottom: 5cm;
+  padding-bottom: 5cm; /* atributos del titulo de cada card*/
   color: #1d1de7;
   }
  
-  .card__data {
+  .card__data {  /* es la box del texto */
     width: 280px;
     background-color: var(--container-color);
     padding: 1.5rem 2rem;
@@ -20,7 +20,7 @@
     bottom: -9rem;
     left: 0;
     right: 0;
-    margin-inline: auto;
+    margin-inline: auto; /* centra la box */
     opacity: 2;
     transition: opacity 1s 1s;
   }
@@ -51,13 +51,13 @@
   /* Naming animations in hover */
   .card__article:hover .card__data {
     animation: show-data 5s forwards;
-    opacity: 2;
+    opacity: 2;                     /* muestra el texto de la card cuando ponemos el mouse encima */
     transition: opacity .3s;
   }
   
   .card__article:hover {
     animation: remove-overflow 2s forwards;
-  }
+  }/* quita la descripcion cuando lo quitas */
   
   .card__article:not(:hover) {
     animation: show-overflow 2s forwards;
@@ -68,22 +68,22 @@
   }
   
   /* Card animation */
-  @keyframes show-data {
+  @keyframes show-data { /* se crea la animacion desde el punto inicial al final */
     50% {
       transform: translateY(-10rem);
     }
-    100% {
+    100% { 
       transform: translateY(-8rem);
     }
   }
   
-  @keyframes remove-overflow {
+  @keyframes remove-overflow { /* cuando quitas el mouse la animacion vuelve al inicio */
     to {
       overflow: initial;
     }
   }
   
-  @keyframes remove-data {
+  @keyframes remove-data { /* animacion de salida de la  card */
     0% {
       transform: translateY(-7rem);
     }
